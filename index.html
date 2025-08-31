@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Binaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Calculadora Binaria</h2>
+
+    <label for="bin1">Binario 1:</label>
+    <input type="text" id="bin1" placeholder="Ej: 1010">
+
+    <label for="bin2">Binario 2:</label>
+    <input type="text" id="bin2" placeholder="Ej: 110">
+
+    <label for="operacion">Operación:</label>
+    <select id="operacion">
+      <option value="suma">Suma</option>
+      <option value="resta">Resta</option>
+      <option value="multiplicacion">Multiplicación </option>
+      <option value="division">División </option>
+    </select>
+
+    <div class="botones">
+      <button class="btn liquid" onclick="calcular()">Calcular</button>
+      <button class="btn liquid" onclick="resetear()">Resetear</button>
+    </div>
+
+    <h3>Resultado:</h3>
+    <p id="resultado"></p>
+    <footer>
+    <p>© 2025 Desarrollado por Gustavo Moya</p>
+  </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
